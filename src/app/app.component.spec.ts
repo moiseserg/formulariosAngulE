@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'formularios'`, () => {
+  it(`should have as title 'loginAppX'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('formularios');
+    expect(app.title).toEqual('loginAppX');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('formularios app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('loginAppX app is running!');
   });
 });
